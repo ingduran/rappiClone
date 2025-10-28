@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { google } from "../config/firebase";
 
-export default function login() {
+export default function Login() {
 
 
     const router = useRouter();
@@ -22,11 +22,9 @@ export default function login() {
             email: infoUser.user.email,
         };
 
-
         const token = await 
         infoUser.user.getIdToken(true);
         sessionStorage.setItem('token', JSON.stringify(token));
-
         sessionStorage.setItem("user", JSON.stringify(userData));
 
         router.push("/");
@@ -83,7 +81,7 @@ export default function login() {
                             <div className="banner-img">
                                 <span className="banner-img-span">
                                     <span className="banner-img-spanIn"></span>
-                                    <img className="login-banner" src="/10-login-banner.png" alt="banner"></img>
+                                    <img className="login-banner" src="/10-login-banner.png" alt="banner"/>
                                 </span>
                             </div>
                         </div>
