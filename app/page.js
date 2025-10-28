@@ -979,7 +979,7 @@ export default function Home() {
                     </li>
 
                     <li className="footerItem-li">
-                      <a href="#">Domino´s Pizza</a>
+                      <a href="#">{"Domino´s Pizza"}</a>
                     </li>
 
                     <li className="footerItem-li">
@@ -1003,7 +1003,7 @@ export default function Home() {
                     </li>
 
                     <li className="footerItem-li">
-                      <a href="#">Papa John´s</a>
+                      <a href="#">{"Papa John´s"}</a>
                     </li>
                   </div>
                 </ul>
