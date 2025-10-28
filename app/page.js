@@ -594,7 +594,7 @@ export default function Home() {
                     <div className="linkFooter-sectionCinco">
                       <div className="animate-none">
                         <div className="linkFooterText-sectionCinco">
-                          <p className="font-[800] text-[12px] leading-[1.83] text-[#3870ff]">McDonald´s</p>
+                          <p className="font-[800] text-[12px] leading-[1.83] text-[#3870ff]">{"McDonald´s"}</p>
                         </div>
                       </div>
                     </div>
