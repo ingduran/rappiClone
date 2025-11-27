@@ -26,11 +26,13 @@ export default function HeaderTwo(props) {
     useEffect(() => {
         const boton = document.querySelector('.btn-basket');
         const sidebar = document.querySelector('.SidebarCoreBoxContainer');
+        const SidebarOverlay = document.querySelector('.SidebarOverlay');
 
         boton.addEventListener('click',() => {
         // Cambiar clase directamente con JavaScript
         sidebar.classList.remove('SidebarCoreBoxContainer');
-        sidebar.classList.add('SidebarCoreBoxContainer-visible');    
+        sidebar.classList.add('SidebarCoreBoxContainer-visible');
+        SidebarOverlay.style.display = 'block';    
         });
 
         // Limpieza al desmontar (buena práctica)

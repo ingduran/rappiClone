@@ -11,6 +11,7 @@ export default function Home() {
     const timeout = setTimeout(() => {
       const boton = document.querySelector(".yourbasket-button");
       const sidebarVisible = document.getElementById("micro-basket-container");
+      const SidebarOverlay = document.querySelector(".SidebarOverlay");
 
       // Verificación de existencia
       if (!boton || !sidebarVisible) {
@@ -21,6 +22,7 @@ export default function Home() {
       const handleClick = () => {
         sidebarVisible.classList.remove("SidebarCoreBoxContainer-visible");
         sidebarVisible.classList.add("SidebarCoreBoxContainer");
+        SidebarOverlay.style.display = 'none';
       };
 
       boton.addEventListener("click", handleClick);
@@ -61,7 +63,7 @@ export default function Home() {
 
       <section id="SidebarCorestyles" className="SidebarCoreBox">
 
-        <div className="SidebarOverlay" style={{display:'none'}}></div>
+        <div className="SidebarOverlay" style={{display: 'none'}} ></div>
 
         <div id="micro-basket-container" className="SidebarCoreBoxContainer">
           <div className="yourbasket">
